@@ -1,0 +1,55 @@
+Set Interface:
+*Set interface does not allow duplication
+*It only allows unique things only.
+*It extends Collection Interface however, does not provide much methods.
+*Set interface does not provide positional access
+*Set does not care about the positions of elements/items within the Set, i.e., elements are not
+	fixed to a particular position. Hence, adding an element in a particular position is not possible.
+
+	
+Queue Interface:
+*Arranged in order of Processing - A to do list for example
+*Queue interface extends Collection, thus supports all Collection Methods
+	interface Queue<E> extends Collection<E>
+*In addition to collection methods, Queue also supports methods:
+	add()
+	offer()
+	remove()
+	poll()
+	peek()
+*Implementation of queue Priority Queue, by default elements are stored in sorted order 
+
+
+Map Interface:
+*Does not extend Collection Interface
+*All operations related to Collection do not apply to Map
+*It is part of Collection Framework, but its not really implementing Collection Framework
+*Stores Key-Value pair:
+	{["key1",value1],["key2",value2],["key3",value3]}
+	Example A,C,A,C,E,C,M,D,H,A
+		{("A",3),("C",3)} there are 3 A's and 3 C's
+*4 important implementations of Map Interface:
+	1. HashMap 		-->unsorted,ordered, key's hashcode() is used
+	
+	2. Hashtable 	-->Synchronized - Thread Safe- version of HashMap, unsorted, 
+						key's hashcode() is used. 
+						Hashmap allows key with null value, Hashtable does not.
+						
+	3. LinkedHashMap --> insertion order is maintained, slower insertion and deletion, faster iteration
+	4. TreeMap -->	sorted order is maintained,implements NavigableMap
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
